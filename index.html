@@ -15,7 +15,7 @@
 <!-- ////////////////////////////////////////////////////////////////////////////////////////
                                START SECTION 1 - THE NAVBAR SECTION  
 /////////////////////////////////////////////////////////////////////////////////////////////-->
-<nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top" id="nav-menu">
     <div class="container">
       <a class="navbar-brand" href="">
         <!-- <img src="images/logo.png" alt="logo image"> -->
@@ -26,16 +26,16 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"  id="home" class="nav-link home"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="#services">About</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="#portfolio">Project</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonials">TechStack</a></li>
+          <li class="nav-item" id="projects"  class="nav-link projects"><a class="nav-link" href="#portfolio">Project</a></li>
+          <li class="nav-item"  id="skills" class="nav-link skills"><a class="nav-link" href="#testimonials">TechStack</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="#faq">faq</a></li> -->
 
-          <li class="nav-item"><a class="nav-link" href="#contact">contact</a>
+          <li class="nav-item" id="contact" class="nav-link contact"><a class="nav-link" href="#contact">contact</a>
           </li>
         </ul>
-        <button type="button" class="rounded-pill btn-rounded"  onclick="location.href='https://drive.google.com/drive/folders/101YchyghPwqNMAQV1TlP1Cgostcei2jN'">
+        <button  id="resume-link-1" type="button" class="rounded-pill btn-rounded" class="nav-link resume"  onclick="location.href='https://drive.google.com/drive/folders/101YchyghPwqNMAQV1TlP1Cgostcei2jN'">
           Resume
           <span>
           
@@ -56,8 +56,8 @@
       <!-- START THE CONTENT FOR THE INTRO  -->
       <div class="col-md-6 intros text-start">
         <h1 class="display-2">
-          <span class="display-2--intro">Hey! I'm Sankalp Tiwari</span>
-          <span class="display-2--description lh-base">
+          <span class="display-2--intro" id="user-detail-name">Hey! I'm Sankalp Tiwari</span>
+          <span class="display-2--description lh-base"  id="user-detail-intro">
             A self-motivated,hard-working and ambitious Web Developer with proficiency 
             in HTML,CSS,Javascript,React,Redux,Node.js,Express,MongoDB . 1300+ hours of coding and  hands-on experience in developing
             3 fully functional websites and 400+ hours hands-on experience in problem solving.
@@ -68,7 +68,7 @@
       <!-- START THE CONTENT FOR THE VIDEO -->
       <div class="col-md-6 intros text-end">
         <div class="video-box">
-          <img src="./images/portfolio/sankalp.jpg" alt="video illutration" class="img-fluid">
+          <img src="./images/portfolio/sankalp.jpg"  alt="video illutration" class="img-fluid" class="home-img">
           <!-- <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle"> -->
          
            
@@ -101,22 +101,22 @@
           <img src="./images/portfolio/Timely.png" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
           <div class="portfolio-info">
             <div class="caption">
-              <h4>Timely website</h4>
+              <h4 class="project-title">Timely website</h4>
             </div>
           </div>
         </div>
         <div class="card-body">
           <h5 class="card-title ">
-            <img src="./images/portfolio/html.png" width="40px" alt="" srcset="">
-            <img src="./images/portfolio/CSS3_logo.svg.png"  width="40px" alt="" srcset="">
-            <img src="./images/portfolio/javascript-icon-png-23.jpg"  width="40px" alt="" srcset="">
-            <img src="./images/portfolio/git.png" alt="" srcset=" "  width="40px">
+            <img  class="project-tech-stack" src="./images/portfolio/html.png" width="40px" alt="" srcset="">
+            <img class="project-tech-stack" src="./images/portfolio/CSS3_logo.svg.png"  width="40px" alt="" srcset="">
+            <img class="project-tech-stack" src="./images/portfolio/javascript-icon-png-23.jpg"  width="40px" alt="" srcset="">
+            <img class="project-tech-stack" src="./images/portfolio/git.png" alt="" srcset=" "  width="40px">
             <!-- <img src="./images/portfolio/node.png" alt="" srcset=" "  width="40px"> -->
           </h5>
-          <p class="card-text ">This card has supporting text below as a natural lead-in  to additional content.</p>
+          <p class="card-text" class="project-description">Timely's time tracking software helps teams stay connected and report accurately across client, project and employee hours.</p>
         </div>
-        <button  onclick="location.href='https://gentle-buttercream-5024eb.netlify.app/'" style="background-color: #CB2DE6; color: white; border:none; padding: 10px;">Check it Out!</button>
-          <button  onclick="location.href='https://github.com/actuallyakshay/Timely.com-clone'" style="background-color: #CB2DE6; color: white; border:none; padding: 10px;">Github Link</button>
+        <button   class="project-deployed-link" onclick="location.href='https://gentle-buttercream-5024eb.netlify.app/'" style="background-color: #CB2DE6; color: white; border:none; padding: 10px;">Check it Out!</button>
+          <button  class="project-github-link" onclick="location.href='https://github.com/actuallyakshay/Timely.com-clone'" style="background-color: #CB2DE6; color: white; border:none; padding: 10px;">Github Link</button>
       </div>
 
       <div class="col-lg-5 col-md-4 shadow text-center p-3 mb-5 bg-white rounded g-3  m-lg-3">
@@ -124,21 +124,21 @@
           <img src="./images/portfolio/Deccan.png" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid">
           <div class="portfolio-info">
             <div class="caption">
-              <h4>Deccan Chronicle Company</h4>
+              <h4 class="project-title">Deccan Chronicle Company</h4>
             </div>
           </div>
         </div>
         <div class="card-body">
           <h5 class="card-title text-center " >
-            <img src="./images/portfolio/html.png" width="40px" alt="" srcset="">
-            <img src="./images/portfolio/CSS3_logo.svg.png"  width="40px" alt="" srcset="">
-            <img src="./images/portfolio/react.png"  width="40px" alt="" srcset="">
-            <img src="./images/portfolio/git.png" alt="" srcset=" "  width="40px">
+            <img class="project-tech-stack" src="./images/portfolio/html.png" width="40px" alt="" srcset="">
+            <img class="project-tech-stack" src="./images/portfolio/CSS3_logo.svg.png"  width="40px" alt="" srcset="">
+            <img class="project-tech-stack" src="./images/portfolio/react.png"  width="40px" alt="" srcset="">
+            <img class="project-tech-stack" src="./images/portfolio/git.png" alt="" srcset=" "  width="40px">
           </h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in  to additional content.</p>
+          <p class="card-text">Deccan Chronicle is news app where you can read the latest news, views, analysis and images from India and the world.</p>
         </div>
-        <button  onclick="location.href='https://beautiful-gnome-48199e.netlify.app/'" style="background-color: #CB2DE6; color: white; border:none; padding: 10px;">Check it Out!</button>
-          <button  onclick="location.href='https://github.com/DevSankalp1894/swank-meeting-7218'" style="background-color: #CB2DE6; color: white; border:none; padding: 10px;">Github Link</button>
+        <button  class="project-deployed-link" onclick="location.href='https://beautiful-gnome-48199e.netlify.app/'" style="background-color: #CB2DE6; color: white; border:none; padding: 10px;">Check it Out!</button>
+          <button class="project-github-link"  onclick="location.href='https://github.com/DevSankalp1894/swank-meeting-7218'" style="background-color: #CB2DE6; color: white; border:none; padding: 10px;">Github Link</button>
       </div>
 
     </div>
@@ -148,22 +148,22 @@
         <img src="./images/portfolio/myntra.png" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid">
         <div class="portfolio-info">
           <div class="caption">
-            <h4>Myntra Company</h4>
+            <h4 class="project-title">Myntra Company</h4>
           </div>
         </div>
       </div>
       <div class="card-body">
         <h5 class="card-title text-center " >
-          <img src="./images/portfolio/html.png" width="40px" alt="" srcset="">
-          <img src="./images/portfolio/CSS3_logo.svg.png"  width="40px" alt="" srcset="">
-          <img src="./images/portfolio/react.png"  width="40px" alt="" srcset="">
-          <img src="./images/portfolio/redux-96.png"  width="40px" alt="" srcset="">
-          <img src="./images/portfolio/chakra-ui.jpeg" alt="" srcset=" "  width="40px">
+          <img class="project-tech-stack" src="./images/portfolio/html.png" width="40px" alt="" srcset="">
+          <img class="project-tech-stack" src="./images/portfolio/CSS3_logo.svg.png"  width="40px" alt="" srcset="">
+          <img class="project-tech-stack" src="./images/portfolio/react.png"  width="40px" alt="" srcset="">
+          <img class="project-tech-stack" src="./images/portfolio/redux-96.png"  width="40px" alt="" srcset="">
+          <img class="project-tech-stack" src="./images/portfolio/chakra-ui.jpeg" alt="" srcset=" "  width="40px">
         </h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in  to additional content.</p>
+        <p class="card-text">Myntra is E-commerce company where user can buy and sell their products</p>
       </div>
-      <button  onclick="location.href='https://myntra-eight.vercel.app/'" style="background-color: #CB2DE6; color: white; border:none; padding: 10px;">Check it Out!</button>
-        <button  onclick="location.href='https://github.com/DevSankalp1894/classic-world'" style="background-color: #CB2DE6; color: white; border:none; padding: 10px;">Github Link</button>
+      <button  class="project-deployed-link"  onclick="location.href='https://myntra-eight.vercel.app/'" style="background-color: #CB2DE6; color: white; border:none; padding: 10px;">Check it Out!</button>
+        <button  class="project-github-link" onclick="location.href='https://github.com/DevSankalp1894/classic-world'" style="background-color: #CB2DE6; color: white; border:none; padding: 10px;">Github Link</button>
     </div>
 
   </div>
@@ -187,50 +187,50 @@
       <div class="row d-flex justify-content-between flex-wrap">
         <div class="col-md-1 col-lg-1 shadow p-3 mb-5 bg-transparent rounded " style="min-width: 150px;">
           <div class=" shadow-sm " >
-            <h4 class="display-7 fw-bold">HTML</h4>
-            <img src="./images//portfolio/html1.png"  alt="html 1 logo" title="Campany 1 Logo" class="img-fluid">
+            <h4 class="display-7 fw-bold"  class="skills-card-name">HTML</h4>
+            <img  src="./images//portfolio/html1.png"  alt="html 1 logo" title="Campany 1 Logo" class="img-fluid" class="skills-card-img">
           </div>
         </div>
         <div class="col-md-1 col-lg-1 shadow p-3 mb-5 bg-transparent rounded " style="min-width: 150px;">
           <div class=" shadow-sm">
-            <h4 class="display-7 fw-bold">CSS</h4>
-            <img src="./images//portfolio/css1.png" alt="css 2 logo" title="Campany 2 Logo" class="img-fluid">
+            <h4 class="display-7 fw-bold" class="skills-card-name">CSS</h4>
+            <img  src="./images//portfolio/css1.png" alt="css 2 logo" title="Campany 2 Logo" class="img-fluid" class="skills-card-img">
           </div>
         </div>
         <div class="col-md-1 col-lg-1 shadow p-3 mb-5 bg-transparent rounded "style="min-width: 150px;">
           <div class=" shadow-sm">
-            <h4 class="display-7 fw-bold">Javascript</h4>
-            <img src="./images//portfolio/javascript (1).png" alt="javascript logo" title="Campany 3 Logo" class="img-fluid">
+            <h4 class="display-7 fw-bold" class="skills-card-name">Javascript</h4>
+            <img  src="./images//portfolio/javascript (1).png" alt="javascript logo" title="Campany 3 Logo" class="img-fluid" class="skills-card-img">
           </div>
         </div>
         <div class="col-md-1 col-lg-1 shadow p-3 mb-5 bg-transparent rounded" style="min-width: 150px;">
           <div class=" shadow-sm">
-            <h4 class="display-7 fw-bold">Bootstrap</h4>
-            <img src="./images//portfolio/bootstra1p.png" alt="bootstra1p logo" title="Campany 4 Logo" class="img-fluid">
+            <h4 class="display-7 fw-bold" class="skills-card-name">Bootstrap</h4>
+            <img  src="./images//portfolio/bootstra1p.png" alt="bootstra1p logo" title="Campany 4 Logo" class="img-fluid" class="skills-card-img">
           </div>
         </div>
         <div class="col-md-4 col-lg-1 shadow p-3 mb-5 bg-transparent rounded" style="min-width: 150px;">
           <div class="shadow-sm">
-            <h4 class="display-7 fw-bold">React</h4>
-            <img src="./images//portfolio/react1.png" alt="react 6 logo" title="Campany 6 Logo" class="img-fluid">
+            <h4 class="display-7 fw-bold" class="skills-card-name">React</h4>
+            <img  src="./images//portfolio/react1.png" alt="react 6 logo" title="Campany 6 Logo" class="img-fluid" class="skills-card-img">
           </div>
         </div>
         <div class="col-md-4 col-lg-1 shadow p-3 mb-5 bg-transparent rounded" style="min-width: 150px;">
           <div class="shadow-sm">
-            <h4 class="display-7 fw-bold">Redux</h4>
-            <img src="./images//portfolio/redux-96.png" alt="Campany 6 logo" title="Redux 6 Logo" class="img-fluid">
+            <h4 class="display-7 fw-bold" class="skills-card-name">Redux</h4>
+            <img src="./images//portfolio/redux-96.png" alt="Campany 6 logo" title="Redux 6 Logo" class="img-fluid" class="skills-card-img">
           </div>
         </div>
         <div class="col-md-4 col-lg-1 shadow p-3 mb-5 bg-transparent rounded" style="min-width: 150px;">
           <div class="shadow-sm">
-            <h4 class="display-7 fw-bold">Chakra-Ui</h4>
-            <img src="./images//portfolio/chakra-ui.jpeg" alt="material-ui 6 logo" title="Campany 6 Logo" class="img-fluid">
+            <h4 class="display-7 fw-bold" class="skills-card-name">Chakra-Ui</h4>
+            <img  src="./images//portfolio/chakra-ui.jpeg" alt="material-ui 6 logo" title="Campany 6 Logo" class="img-fluid" class="skills-card-img">
           </div>
         </div>
         <div class="col-md-4 col-lg-1 shadow p-3 mb-5 bg-transparent rounded" style="min-width: 150px;">
           <div class="shadow-sm">
-            <h4 class="display-7 fw-bold"><Node class="js"><Node class="js">Node.JS</Node></Node></h4>
-            <img src="./images//portfolio/node.png" alt="material-ui 6 logo" title="Campany 6 Logo" class="img-fluid">
+            <h4 class="display-7 fw-bold" class="skills-card-name"><Node class="js"><Node class="js">Node.JS</Node></Node></h4>
+            <img  src="./images//portfolio/node.png" alt="material-ui 6 logo" title="Campany 6 Logo" class="img-fluid" class="skills-card-img">
           </div>
         </div>
        
@@ -238,8 +238,8 @@
           
         <div class="col-md-1 col-lg-1 shadow p-3 mb-5 bg-transparent rounded " style="min-width: 150px;">
           <div class="shadow-sm ">
-            <h4 class="display-7 fw-bold">Mongodb</h4>
-            <img src="./images//portfolio/mongodb.png" alt="mongodb logo" title="Campany 6 Logo" class="img-fluid">
+            <h4 class="display-7 fw-bold" class="skills-card-name">Mongodb</h4>
+            <img  src="./images//portfolio/mongodb.png" alt="mongodb logo" title="Campany 6 Logo" class="img-fluid" class="skills-card-img">
           </div>
         </div>
         
@@ -252,78 +252,6 @@
   </div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 </section>
-
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
-                       START SECTION 6 - THE FAQ 
-//////////////////////////////////////////////////////////////////////////////////////////////////////-->
-<!-- <section id="faq" class="faq">
-  <div class="container">
-    <div class="row text-center">
-      <h1 class="display-3 fw-bold text-uppercase">faq</h1>
-      <div class="heading-line"></div>
-      <p class="lead">frequently asked questions, get knowledge befere hand</p>
-    </div>
-  
-    <div class="row mt-5">
-      <div class="col-md-12">
-        <div class="accordion" id="accordionExample">
-          
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                What are the main features?
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-             
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                do i have to pay again after trial
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-             
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            How can I get started after trial?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-             
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Can I be refunded if am not satisfied?
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////
                               START SECTION 7 - THE PORTFOLIO  
@@ -362,9 +290,10 @@
           <ul class="mb-lg-5" style="list-style: none; ">
            
             <li class="mb-lg-5"> <img src="./images//portfolio/location (1).png" alt="" srcset=""></i><span>Address:  Vijay Nagar,Jabalpur <br> <span class="px-5">Madhya Pardesh, Pincode: 482021</span></span></li>
-            <li class="mb-lg-5"><img src="./images//portfolio/phone.png" alt=""> <span  class="px-3"> <a href="tel:+918349889320" style="color: white">+918349889320</a></span></li>
-            <li class="mb-lg-5"><img src="./images//portfolio/gmail.png" alt=""><span  class="px-3"><a href="mailto:sankalp401@gmail.com" style="color: white;">sankalp401@gmail.com</a></span></li>
-            <li class="mb-lg-5"><img src="./images//portfolio/linkdine.png" alt=""><a href="https://www.linkedin.com/in/sankalp-tiwari-6b18b016a/"><span style="color: white;">sankalp-tiwari-6b18b016a</span></a></li>
+            <li class="mb-lg-5"><img src="./images//portfolio/phone.png"  alt=""> <span  class="px-3"> <a id="contact-phone" href="tel:+918349889320" style="color: white">+918349889320</a></span></li>
+            <li class="mb-lg-5"><img src="./images//portfolio/gmail.png" alt=""><span  class="px-3"><a  id="contact-email" href="mailto:sankalp401@gmail.com" style="color: white;">sankalp401@gmail.com</a></span></li>
+            <li class="mb-lg-5"><img src="./images//portfolio/linkdine.png" alt=""><a id="contact-linkedin" href="https://www.linkedin.com/in/sankalp-tiwari-6b18b016a/"><span style="color: white;">sankalp-tiwari-6b18b016a</span></a></li>
+            <li class="mb-lg-5"><img id="git-img" src="./images//portfolio/git.png" alt=""><a id="contact-github" href="https://github.com/DevSankalp1894"><span style="color: white;">DevSankalp1894</span></a></li>
           </ul>
         </div>
       </div>
